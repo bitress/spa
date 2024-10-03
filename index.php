@@ -79,10 +79,47 @@ if(isset($_GET['export'])){
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    
+    <style>
+        /* Custom styling for the header */
+        .header {
+            background-color: #f8f9fa; /* Light background color */
+            padding: 20px; /* Spacing around the header */
+            text-align: center; /* Centering text */
+            border-bottom: 1px solid #dee2e6; /* Optional bottom border */
+        }
+        .header h1 {
+            font-size: 2.5rem; /* Large font size for the title */
+            margin-bottom: 0.5rem; /* Spacing below the title */
+        }
+        .header h2 {
+            font-size: 1.5rem; /* Medium font size for the subtitle */
+            color: #6c757d; /* Secondary text color */
+        }
+
+        .footer {
+            background-color: #f8f9fa; /* Light background color */
+            padding: 20px; /* Spacing around the footer */
+            text-align: center; /* Centering text */
+            border-top: 1px solid #dee2e6; /* Optional top border */
+            position: relative; /* Allows for positioning elements if needed */
+            bottom: 0; /* Position at the bottom */
+            width: 100%; /* Full width */
+        }
+        .footer p {
+            margin: 0; /* Remove default margins */
+            color: #6c757d; /* Secondary text color */
+        }
+
+    </style>
 </head>
 
 <body>
+<header class="header">
+        <h1>Prof Elective 5</h1>
+        <h2>BSIT 4</h2>
+        <p>Submitted by: Cyanne Justin Vega</p>
+    </header>
+
 
     <div class="container py-5">
 
@@ -428,6 +465,9 @@ if(isset($_GET['export'])){
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <p>Submitted to: Mr. Jim-mar delos Reyes</p>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
